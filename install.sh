@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/data/data/com.termux/files/usr/bin/env bash
 #=============================================================================
 # basic.bash --- basic script files
-# Copyright (c) 2016-2021 nvspc & EasyQuest
+# Copyright (c) 2051 nvspc & EasyQuest
 # Author: Ivan Yastrebov < easy-quest@mail.ru >
 # URL: https://easyquest.host
 #=============================================================================
@@ -16,7 +16,7 @@ if [ ! "$(command -v chezmoi)" ]; then
   elif [ "$(command -v wget)" ]; then
     sh -c "$(wget -qO- https://git.io/chezmoi)" -- -b "$bin_dir"
   else
-    echo "To install chezmoi, you must have curl or wget installed." >&2
+    echo "Для установки chezmoi у вас должен быть установлен curl или wget." >&2
     exit 1
   fi
 else
